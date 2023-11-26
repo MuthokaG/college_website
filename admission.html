@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #009688;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #00796b;
+        }
+       
+         html {
+          scroll-behavior: smooth;
+        }
+        .headers {
+            background-color: #6d3535;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .headers {
+            background-color: #6d3535;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            overflow: hidden;
+            background-color: #14b0cc;
+        }
+        nav a:hover {
+            background-color: red;
+        }
+        nav a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover{
+            background-color:red;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="headers">
+        <h1>Elite College</h1>
+    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="main.html">Home</a>
+        <div>
+    <a href="admission.html">Admissions</a>
+            
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Academics
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+        <a href="courses.html">Courses</a>
+                
+            </div>
+        </div>
+        <a href="about us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="portal.html">Portals</a>
+
+            </div>
+        </div>
+        <a href="hostels.php">Hostels</a>
+    </nav>
+    <form method="POST" action="admission.php">
+        <h2>University Admission Form</h2>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="" disabled selected>Select a course</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Education">Education</option>
+            <option value="Technology">Technology</option>
+            <option value="Sciences">Sciences</option>
+            <!-- Add more program options as needed -->
+        </select>
+
+        <label for="program">Program:</label>
+        <select id="program" name="program" required>
+            <option value="" disabled selected>Select a program</option>
+            <option value="Diploma">DiplomaU</option>
+            <option value="Certificate">Certificate</option>
+            <option value="Artisan">Artisan</option>
+            <!-- Add more program options as needed -->
+        </select>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .headers {
+            background-color: #6d3535;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            color: white;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            overflow: hidden;
+            background-color: #14b0cc;
+        }
+
+        nav a:hover {
+            background-color: red;
+        }
+
+        nav a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover {
+            background-color: red;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 80px; /* Adjust margin to avoid overlap with fixed navigation */
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: auto; /* Center the form */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .new-user {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .new-user a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .new-user a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headers">
+        <h1>Elite College</h1>
+    </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="main.html">Home</a>
+        <a href="admission.html">Admissions</a>
+        <div class="dropdown">
+            <button class="dropbtn">Academics
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="courses.html">Courses</a>
+            </div>
+        </div>
+        <a href="about us.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="portal.html">Portals</a>
+        <a href="hostels.php">Hostels</a>
+    </nav>
+
+    <div class="main-content">
+        <form method="POST" action="portal.php">
+            <label for="regNumber">Student Registration Number:</label>
+            <input type="text" id="regNumber" name="regNumber" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="new-user">Don't have an account? <a href="sign.html">Sign up here</a></p>
+    </div>
+</body>
+
+</html>
