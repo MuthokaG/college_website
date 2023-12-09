@@ -10,7 +10,6 @@
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-        
         }
         h2 {
             text-align: center;
