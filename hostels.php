@@ -12,7 +12,6 @@
             padding: 0;
         
         }
-
         h2 {
             text-align: center;
             color: #333;
